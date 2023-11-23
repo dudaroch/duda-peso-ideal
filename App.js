@@ -4,8 +4,8 @@ import { Pressable, Text, View,Switch, TextInput, Image, ImageBackground } from 
 import styles from './globalStyles';
 
 // http://conversorfacil.com.br/calcular/peso-ideal
-import imagem1 from './assets/men.jpg'
-import imagem2 from './assets/woman.jpg'
+import imagem1 from './assets/men.png'
+import imagem2 from './assets/woman.png'
 
 export default function App() {
   const [altura, setAltura] = useState('');
@@ -54,7 +54,7 @@ export default function App() {
           />
           <Text style={styles.mulher}>Mulher</Text>
         </View>
-        <View style={{display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingTop:15,}}>
+        <View style={{display: "flex", justifyContent: "center", alignItems: "center", paddingTop:15,}}>
           <Pressable
             style={!sexo ? styles.botao : styles.botao2}
             onPress={() => calcular(altura,sexo,peso,imagem)}
@@ -63,7 +63,7 @@ export default function App() {
               Calcular
             </Text>
           </Pressable>
-
+          <Text>{"/n"}</Text>
           <View style={{alignItems:"center", justifyContent: "center"}}><Text style={{color: "#fff", fontWeight:"bold"}}>{`${peso}`}</Text></View>
         </View>
         <StatusBar style="auto" />

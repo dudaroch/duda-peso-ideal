@@ -35,11 +35,11 @@ export default styles = StyleSheet.create({
     borderColor: '#fff',
     borderRadius: 15,
     alignItems: 'center',
+    alignSelf: 'center',
     width: 120,
   },
   image: {
     flex: 1,
-    // justifyContent: 'center',
 
   },
   vidro:{
@@ -55,12 +55,16 @@ export default styles = StyleSheet.create({
     color: "#fff",
     fontSize: 15,
     paddingTop:15,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
   input:{
     width:"100%",
     paddingLeft: 5,
     color: "#fff",
     fontWeight: "bold",
+    textAlign: 'center',
   },
   botao:{
     width: '50%', 
@@ -77,6 +81,7 @@ export default styles = StyleSheet.create({
     borderRadius: 10,
     paddingHorizontal: 10,
     paddingVertical:10,
+    textAlign: "center",
     alignItems: "center",
     justifyContent: 'center',
   },
