@@ -40,10 +40,10 @@ export default function App() {
           onChangeText={setAltura}
           style={styles.input}
           keyboardType='numeric'
+          returnKeyType='done'
           />
         </View>
-        <Text style={styles.textoSimples}>Sexo</Text>
-        <View style={{display: "flex", flexDirection: "row",  alignItems: "center", justifyContent: "center"}}>
+        <View style={{display: "flex", flexDirection: "row",  alignItems: "center", justifyContent: "center", padding: 15,}}>
           <Text style={styles.homem}>Homem</Text>
           <Switch
                 trackColor={{ false: '#b1deef', true: '#ffcbdb' }}
@@ -54,17 +54,16 @@ export default function App() {
           />
           <Text style={styles.mulher}>Mulher</Text>
         </View>
-        <View style={{display: "flex", justifyContent: "center", alignItems: "center", paddingTop:15,}}>
+        <View style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
           <Pressable
             style={!sexo ? styles.botao : styles.botao2}
-            onPress={() => calcular(altura,sexo,peso,imagem)}
+            onPress={() => calcular(altura, sexo, peso, imagem)}
           >
             <Text style={{color: "#fff", fontWeight: "bold"}}>
               Calcular
             </Text>
           </Pressable>
-          <Text>{"/n"}</Text>
-          <View style={{alignItems:"center", justifyContent: "center"}}><Text style={{color: "#fff", fontWeight:"bold"}}>{`${peso}`}</Text></View>
+          <View style={{alignItems:"center", justifyContent: "center", paddingTop: 15,}}><Text style={{color: "#fff", fontWeight:"bold"}}>O peso ideal é: {`${peso}`}</Text></View>
         </View>
         <StatusBar style="auto" />
         </View>

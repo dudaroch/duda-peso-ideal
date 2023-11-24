@@ -31,12 +31,13 @@ export default styles = StyleSheet.create({
   viewInput: {
     flexDirection: 'row',
     borderStyle: "solid",
-    borderWidth: 3,
+    borderWidth: 1,
     borderColor: '#fff',
     borderRadius: 15,
     alignItems: 'center',
     alignSelf: 'center',
-    width: 120,
+    width: 160,
+    height: 40,
   },
   image: {
     flex: 1,
@@ -44,10 +45,10 @@ export default styles = StyleSheet.create({
   },
   vidro:{
     backgroundColor:"rgba(0, 0, 0, 0.500)",
-    borderRadius: 15,
+    borderRadius: 20,
     paddingHorizontal: 20,
     paddingVertical:20,
-    width: 250,
+    width: 300,
     height: 325,
     justifyContent: 'center',
   },
@@ -74,6 +75,7 @@ export default styles = StyleSheet.create({
     paddingVertical:10,
     alignItems: "center",
     justifyContent: 'center',
+
   },
   botao2:{
     width: '50%', 
