@@ -13,7 +13,7 @@ export default function App() {
   const [peso,setPeso] = useState('');
   const [imagem, setImagem] = useState('');
 
-  const calcular = (altura,sexo,peso,imagem) => {
+  const calcular = (altura,sexo, peso, imagem) => {
     if(sexo == false){
       let h = parseInt(altura)
       setPeso((( h - 100 ) - [ ( h - 150 ) / 4 ]) + "Kg")
@@ -21,11 +21,7 @@ export default function App() {
       let h = parseInt(altura)
       setPeso((( h - 100 ) - [ ( h - 150 ) / 2 ])+ "Kg" )
     };
-    // if(sexo==false){
-    //   setImagem(imagem1)
-    // } else if(sexo == true){
-    //   setImagem(imagem2)
-    // };
+   
   };
   return (
     <View style={styles.container}>
